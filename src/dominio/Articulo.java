@@ -39,7 +39,8 @@ public class Articulo implements Serializable {
 		this.tags = new ArrayList<String>(Arrays.asList(t));
 	}
 
-	public boolean equals(Object o) {
+	public boolean equals(Object o) { 				// Overwrite de funcion equals
+									// para remover por nombre
 		if(o == null) {
 			return false;
 		}
@@ -50,9 +51,9 @@ public class Articulo implements Serializable {
 			return ((Articulo) o).nombre.equals(this.nombre);
 		}
 	}
-	public String toString(){
+	public String toString(){					// usado para generar la tabla
 		String t = "";
-		for(String tag:this.tags) t+=tag + " ";
+		for(String tag:this.tags) t+=tag + " "; 
 		return String.format("%-10s | %-10.2f | %s",this.nombre,this.precio,t);
 		// return "Articulo: " + this.nombre + " | Precio: " + this.precio + " | Tags: " + t;
 	}

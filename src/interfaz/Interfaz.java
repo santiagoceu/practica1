@@ -18,11 +18,25 @@ public class Interfaz {
 			System.out.print(l);
 		}
 		else if (p[0].equals("help"))
-			System.out.print("Introduzca una de las siguientes peticiones: \n add <nombre> <precio> [tags]\nlist \nexit");
+			System.out.print("Introduzca una de las siguientes peticiones: \n add <nombre> <precio> [tags]\nlist \nexit\nidlist \nidremove");
 		else if (p[0].equals("remove") && (p.length>1))
 			l.remove(p[1]);
 		else if (p[0].equals("exit"))
 			return false;
+		else if (p[0].equals("idlist")) {
+
+			System.out.printf("%-1s | %-10s | %-10s | %s%n","ID","Articulo","Precio","Tags");
+			System.out.print(l.listaId()); // Lista con ids para editar o remover por id.
+		}
+		else if (p[0].equals("idremove") && p.length>1) { //remover por indice del array
+			try {
+				int b = Integer.parseInt(p[1]);
+				l.remove(b);
+			} catch (Exception e) {
+				System.out.println("Id invalido.");
+			}
+		}
+	
 		return true;
 	}
 	public String leerPeticion(){
