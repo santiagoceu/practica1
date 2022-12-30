@@ -53,6 +53,7 @@ public class Articulo implements Serializable {
 	public String toString(){
 		String t = "";
 		for(String tag:this.tags) t+=tag + " ";
-		return "Articulo: " + this.nombre + " | Precio: " + this.precio + " | Tags: " + t;
+		return String.format("%-10s | %-10.2f | %s",this.nombre,this.precio,t);
+		// return "Articulo: " + this.nombre + " | Precio: " + this.precio + " | Tags: " + t;
 	}
 }

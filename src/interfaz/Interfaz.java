@@ -13,8 +13,10 @@ public class Interfaz {
 				System.out.println("Precio no es valido.");
 			}
 		}	
-		else if (p[0].equals("list"))
+		else if (p[0].equals("list")) {
+			System.out.printf("%-10s | %-10s | %s%n","Articulo","Precio","Tags");
 			System.out.print(l);
+		}
 		else if (p[0].equals("help"))
 			System.out.print("Introduzca una de las siguientes peticiones: \n add <nombre> <precio> [tags]\nlist \nexit");
 		else if (p[0].equals("remove") && (p.length>1))
