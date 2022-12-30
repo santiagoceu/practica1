@@ -1,6 +1,6 @@
-package dominio
+package dominio;
 
-import java.util.BigDecimal;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.Serializable;
@@ -32,10 +32,27 @@ public class Articulo implements Serializable {
 	}
 
 	public ArrayList getTags() {					// Get tags del Articulo
-		return this.tags();
+		return this.tags;
 	}
 
 	public void setTags(String[] t) {				// Soobrescribe tags con nuevas tags.
 		this.tags = new ArrayList<String>(Arrays.asList(t));
+	}
+
+	public boolean equals(Object o) {
+		if(o == null) {
+			return false;
+		}
+		else if (!o.getClass().equals(this.getClass())) {
+			return false;
+		}
+		else {
+			return ((Articulo) o).nombre.equals(this.nombre);
+		}
+	}
+	public String toString(){
+		String t = "";
+		for(String tag:this.tags) t+=tag + " ";
+		return "Articulo: " + this.nombre + " | Precio: " + this.precio + " | Tags: " + t;
 	}
 }
