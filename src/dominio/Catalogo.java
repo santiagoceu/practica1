@@ -12,16 +12,16 @@ public class Catalogo implements Serializable{
 	private ArrayList<Articulo> lista;
 	/**
 	 * Constructor de Catalogo
-	 *Crea un catalogo con una lista vacia de articulos
+	 * Crea un catalogo con una lista vacia de articulos
 	 */
 
 	public Catalogo(){
 		lista=new ArrayList<Articulo>();
 	}
 	/**
-	 *Añade un articulo al catalogo
-	 *@param a Articulo articulo a añadir
-	 *@return la propia libreta para encadenar operaciones
+	 * Añade un articulo al catalogo
+	 * @param c Articulo a añadir
+	 * @return this
 	 */
 
 	public Catalogo add(Articulo c){
@@ -29,35 +29,42 @@ public class Catalogo implements Serializable{
 		return this;
 	}
 	/**
-	 *Sreializa el catalogo a una cadena de caracteres
+	 * Remueve de la lista un articulo por su nombre
+	 * @param n String nombre a remover
 	 */
 
 	public void remove(String n) {
 		this.lista.remove(new Articulo(n,"0",new String [1]));
 	}
 	/**
-	 * Elimina del catalogo el nombre de los articulos anteriores
+	 * Remueve del catalogo a partir de su indice en el ArrayList.
+	 * @param n int, indice
 	 */
 
 	public void remove(int n) {
 		this.lista.remove(n);
 	}
 	/**
-	 * Elimina del catalogo el precio de los articulos anteriores
+	 * Por conveniencia, devuelve el numero de elementos de la lista
+	 * @return int, size
 	 */
 
 	public int size() {
 		return lista.size();
 	}
 	/**
-	 * Indica cuantos articulos hay en el catalogo
+	 * Devuelve el mismo catalogo en ArrayList
+	 * @return ArrayList, la lista.
 	 */
 
 	public ArrayList<Articulo> getLista() {
 		return this.lista;
 	}
 	/**
-	 * Devuelve el catalogo
+	 * Genera una representacion visual del catalogo que incluye
+	 * el indice de cada articulo, que le annade al
+	 * return del toString de Articulo.
+	 * @return String
 	 */
 
 	public String listaId() {
@@ -69,7 +76,10 @@ public class Catalogo implements Serializable{
 		}
 		return cadena;
 	}
-	
+	/**
+	 * Simplemente enlaza todos los pedazos de tabla obtenidos
+	 * del toString de cada Articulo.
+	 */
 	public String toString(){
 		String cadena="";
 		for(Articulo c:lista)
