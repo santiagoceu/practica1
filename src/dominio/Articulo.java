@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.io.Serializable;
 /**
  * Clase Articulo
- *Responsable de leer y procesar las solicitudes del usuario
+ * Responsable de leer y procesar las solicitudes del usuario
  *
  *@author Santiago Vidal/Maria Sanchez
  *@version 1.0

@@ -2,6 +2,12 @@ package aplicacion;
 import java.io.*;
 import dominio.*;
 import interfaz.*;
+/**
+ * Aplicacion de manejo del catalogo
+ *
+ * @author Santiago Vidal/Maria Sanchez
+ * @version 1.0
+ */
 public class Principal{
 	public static void main(String [] args) {
 		ObjectInputStream fi; // Fichero para leer
