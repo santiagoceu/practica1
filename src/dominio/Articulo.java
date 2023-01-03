@@ -4,11 +4,25 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.io.Serializable;
+/**
+ * Clase Articulo
+ *Responsable de leer y procesar las solicitudes del usuario
+ *
+ *@author Santiago Vidal/MariaSanchez
+ *@version 1.0
+ */
 
 public class Articulo implements Serializable {
 	private String nombre;						// nombre del articulo
 	private BigDecimal precio;					// precio del articulo
-	private ArrayList<String> tags;					// informacion adicional del articulo, usado para facilitar la busqueda
+	private ArrayList<String> tags; 				// informacion adicional del articulo, usado para facilitar la busqueda
+	/**
+	 * Constructor de Articulo
+	 *@param n String con el nombre del articulo
+	 *@param p BigDecimal con el precio del articulo
+	 *@param t ArrayList con informacion adicional del articulo
+	 */
+
 	public Articulo(String n, String p, String[] t) {		// Constructor de Articulo
 		this.nombre = n;
 		this.precio = new BigDecimal(p);
