@@ -36,7 +36,10 @@ public class Interfaz {
 				System.out.println("Id invalido.");
 			}
 		}
-	
+		else if (p[0].equals("search")) {
+			Buscador a = new Buscador(l);
+			a.start();
+		}
 		return true;
 	}
 	public String leerPeticion(){
