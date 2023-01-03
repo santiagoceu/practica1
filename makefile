@@ -23,7 +23,7 @@ limpiar:
 	rm -rf $(DOC_DIR)
 	rm -f $(JAR_FILE)
 javadoc:compilar
-	find . -type f -name "*.java" | xargs javadoc  -cp $(OUT_DIR) -classpath -d $(DOC_DIR) -encoding utf-8 -docencoding utf-8 -charset utf-8
+	find . -type f -name "*.java" | xargs javadoc  -cp $(OUT_DIR) -d $(DOC_DIR) -encoding utf-8 -docencoding utf-8 -charset utf-8
 
 debug:compilar
 

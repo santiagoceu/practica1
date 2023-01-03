@@ -86,7 +86,7 @@ public class Articulo implements Serializable {
 	}
 	/** Retorna una linea de tabla ya hecha
 	 * @return Tabla String con el Nombre, precio, y tags.
-	 * /
+	 */
 	public String toString(){					// usado para generar la tabla
 		String t = "";
 		for(String tag:this.tags) t+=tag + " "; 
