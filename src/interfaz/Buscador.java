@@ -6,12 +6,16 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 
 /**
+ * Clase Buscador
  * Busca a traves de todas las tags de los objetos del catalogo
  * Puede hacer busquedas de tipo AND introduciendo '&' al principio, que
  * asegura que los resultados de busqueda contenga todas las tags,
  * Busquedas tipo OR que devuelve resultados con al menos una de las tags,
  * y un operador NOT ! para usar en cualquier modo, en OR el orden importa,
  * pero en AND se asegura que no aparezcan todas las tags excepto las !not.
+ *
+ *@author Santiago Vidal/Maria Sanchez
+ *@version 1.0
 */
 
 

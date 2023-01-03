@@ -3,7 +3,6 @@ import dominio.*;
 import java.util.Scanner;
 import java.util.Arrays;
 /**
-<<<<<<< HEAD
  * Clase Interfaz
  * Responsable de leer y procesar las solicitudes de usuario
  *
@@ -16,20 +15,18 @@ public class Interfaz {
 	 * @param peticion String con la peticion a ejecutar
 	 * @param l Catalogo sobre la que se realiza la peiticion
 	 * @return true: se esperan mas peticiones, false: terminar
+	 * Maneja todas las entradas por pantalla
+ 	 * Contiene todos los comandos
 	 */
-=======
- * Maneja todas las entradas por pantalla
- * Contiene todos los comandos.
- */
 public class Interfaz {
 	/**
 	 * Metodo que devuelve un boolean, mantiene el while en Principal ciclando.\
+	 *
 	 * @param peticion que recibe de leerPeticion()
 	 * @param l Catalogo que recibe en Principal
 	 * @return false si el comando es exit, true de otra manera.
 	 */
 
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
 	public boolean procesarPeticion (String peticion, Catalogo l){
 		String [] p=peticion.split(" "); 	// transforma peticion en un String array para manejo
 		if (p[0].equals("add") && (p.length>2)) { // comando add, annade Articulo al Catalogo
@@ -69,17 +66,15 @@ public class Interfaz {
 		return true;
 	}
 	/**
-<<<<<<< HEAD
 	 * Lee una peticion de usuario
 	 * @return un String con la peticion leida
 	 */
 	public String leerPeticion(){
-=======
+	 /** 
 	 * Se encarga de leer por teclado
 	 * @return String con la lectura por teclado
 	 */
 	public String leerPeticion(){ // leer peticion
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
 		Scanner sc =  new Scanner(System.in);
 		System.out.print("> ");
 		String cadena = sc.nextLine();

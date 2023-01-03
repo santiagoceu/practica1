@@ -6,12 +6,7 @@ import java.util.Arrays;
 import java.io.Serializable;
 /**
  * Clase Articulo
-<<<<<<< HEAD
  * Responsable de leer y procesar las solicitudes del usuario
-=======
- * Tiene nombre, precio, y una serie de tags en ArrayList
- * 
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
  *
  *@author Santiago Vidal/Maria Sanchez
  *@version 1.0
@@ -40,7 +35,6 @@ public class Articulo implements Serializable {
 	public String getNombre() {					// get nombre de Articulo
 		return this.nombre;
 	}
-<<<<<<< HEAD
 	/**
 	 * Devuelve el nombre del articulo
 	 */
@@ -59,7 +53,6 @@ public class Articulo implements Serializable {
 	 * Devuelve el precio del articulo
 	 */
 
-=======
 	/** Setter de nombre del Articulo
 	 * @param n
 	 */
@@ -75,7 +68,6 @@ public class Articulo implements Serializable {
 	/** Set precio de Articulo, acepta un string que es convertido a BigDecimal
 	 * @param p
 	 */
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
 	public void setPrecio(String p) {				// set precio, recibe un string que se convierte a BigDecimal
 		this.precio = new BigDecimal(p);
 	}
@@ -89,7 +81,6 @@ public class Articulo implements Serializable {
 	 * Devuelve la informacion adicional del articulo
 	 */
 
-<<<<<<< HEAD
 	public void setTags(String[] t) {				// Sobreescribe tags con nuevas tags.
 		this.tags = new ArrayList<String>(Arrays.asList(t));
 	}
@@ -97,7 +88,6 @@ public class Articulo implements Serializable {
 	 * Sobreescribe la informacion adicional del articulo
 	 */
 
-=======
 	/** set tags
 	 *  @param t String[] con las nuevas tags, reemplazando las anteriores.
 	 */
@@ -109,7 +99,6 @@ public class Articulo implements Serializable {
 	 * Soobrescribe equals, al recibir objeto compara por this.nombre.
 	 * @param o
 	 */
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
 	public boolean equals(Object o) { 				// Overwrite de funcion equals
 									// para remover por nombre
 		if(o == null) {
@@ -122,13 +111,10 @@ public class Articulo implements Serializable {
 			return ((Articulo) o).nombre.equals(this.nombre);
 		}
 	}
-<<<<<<< HEAD
 	/**
 	 * Permite eliminar un articulo segun el nombre
-=======
 	/** Retorna una linea de tabla ya hecha
 	 * @return Tabla String con el Nombre, precio, y tags.
->>>>>>> bbc3d81dc26c03c7e4a71f2f74b91b358f5afc13
 	 */
 	public String toString(){					// usado para generar la tabla
 		String t = "";
