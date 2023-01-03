@@ -6,7 +6,7 @@ Es la aplicacion principal de gestion interactiva del catalogo
 
 #class Interfaz
 
-Lee y procesa las solicitudes del catalogo. Las peticiones posibles son: help(ayuda), list(listado), add nombre precio(añade articulos a la agenda) y exit()sale de la aplicacion
+Lee y procesa las solicitudes del catalogo. Las peticiones posibles son: help(ayuda), list(listado), remove o idremove(elimina articulos a la agenda, por nombre o id respectivamente), exit()sale de la aplicacion, idlist(da un listado de los ids del catalogo) y search(abre el buscador)
 
 #Licencia
 
