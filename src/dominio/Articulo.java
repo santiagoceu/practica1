@@ -35,7 +35,7 @@ public class Articulo implements Serializable {
 		return this.tags;
 	}
 
-	public void setTags(String[] t) {				// Soobrescribe tags con nuevas tags.
+	public void setTags(String[] t) {				// Sobrescribe tags con nuevas tags.
 		this.tags = new ArrayList<String>(Arrays.asList(t));
 	}
 
