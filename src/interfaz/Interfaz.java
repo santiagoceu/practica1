@@ -2,8 +2,20 @@ package interfaz;
 import dominio.*;
 import java.util.Scanner;
 import java.util.Arrays;
-
+/**
+ * Clase Interfaz
+ * Responsable de leer y procesar las solicitudes de usuario
+ *
+ * @author Santiago Vidal/Maria Sanchez
+ * @version 1.0
+ */
 public class Interfaz {
+	/**
+	 * Procesa una peticion
+	 * @param peticion String con la peticion a ejecutar
+	 * @param l Catalogo sobre la que se realiza la peiticion
+	 * @return true: se esperan mas peticiones, false: terminar
+	 */
 	public boolean procesarPeticion (String peticion, Catalogo l){
 		String [] p=peticion.split(" ");
 		if (p[0].equals("add") && (p.length>2)) {
@@ -42,6 +54,10 @@ public class Interfaz {
 		}
 		return true;
 	}
+	/**
+	 * Lee una peticion de usuario
+	 * @return un String con la peticion leida
+	 */
 	public String leerPeticion(){
 		Scanner sc =  new Scanner(System.in);
 		System.out.print("> ");
