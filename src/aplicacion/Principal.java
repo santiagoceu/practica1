@@ -9,13 +9,11 @@ import interfaz.*;
  * @version 1.0
  */
 
-
-/**
- * La clase Principal del programa.\
- * Se encarga de instanciar las clases, pero ademas de cargar y guardar el catalogo.
- */
-
 public class Principal{
+	/**
+ 	 * La clase Principal del programa.\
+ 	 * Se encarga de instanciar las clases, pero ademas de cargar y guardar el catalogo.
+ 	 */
 	public static void main(String [] args) {
 		ObjectInputStream fi; // Fichero para leer
 		ObjectOutputStream fo; // Fichero para escribir
