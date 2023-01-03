@@ -2,6 +2,12 @@ package aplicacion;
 import java.io.*;
 import dominio.*;
 import interfaz.*;
+
+/**
+ * La clase Principal del programa.\
+ * Se encarga de instanciar las clases, pero ademas de cargar y guardar el catalogo.
+ */
+
 public class Principal{
 	public static void main(String [] args) {
 		ObjectInputStream fi; // Fichero para leer
